@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 import React, { useState, useRef, useEffect} from 'react';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import companyLogo from "../media/logo.png";
 
 
@@ -35,7 +35,7 @@ function NavBar() {
 
   return (
   
-  <BrowserRouter>
+  <HashRouter>
 <Navbar className={styles.navbg} collapseOnSelect expand="lg" fixed="top" variant="dark" style={{ transition: '1s ease',backgroundColor: navBackground ? 'black' : 'transparent'}}>
 
       <Navbar.Brand className={styles.brand} as={Link} to="/" ><img src={companyLogo} alt="Logo"></img></Navbar.Brand>
@@ -61,7 +61,7 @@ function NavBar() {
         <Route path="/contact" element={<Contact/>}/>
         
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
   
   );
 }
