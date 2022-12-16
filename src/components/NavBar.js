@@ -31,7 +31,10 @@ function NavBar() {
       return () => {
         document.removeEventListener('scroll', handleScroll)
       }
-    }, [])
+    }, []);
+
+
+
 
    
 
@@ -45,11 +48,11 @@ function NavBar() {
       <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
       <Navbar.Collapse className={styles.items} id='responsive-navbar-nav'>
          <Nav  className="justify-content-end" style={{ width: "100%" }} >
-              <Nav.Link className={styles.pagename} as={Link} to="/" href="#home">Home</Nav.Link>
-              <Nav.Link  className={styles.pagename}as={Link} to="/about" >About</Nav.Link>
-              <Nav.Link className={styles.pagename} as={Link} to="/services">Services</Nav.Link>
-              <Nav.Link className={styles.pagename} as={Link} to="/careers">Careers</Nav.Link>
-              <Nav.Link className={styles.pagename2} as={Link} to="/contact">Contact Us</Nav.Link>
+              <Nav.Link className={styles.pagename} as={Link} eventKey="0" to="/" href="#home">Home</Nav.Link>
+              <Nav.Link  className={styles.pagename}as={Link} eventKey="1" to="/about" >About</Nav.Link>
+              <Nav.Link className={styles.pagename} as={Link} eventKey="2" to="/services">Services</Nav.Link>
+              <Nav.Link className={styles.pagename} as={Link} eventKey="3" to="/careers">Careers</Nav.Link>
+              <Nav.Link className={styles.pagename2} as={Link} eventKey="4" to="/contact">Contact Us</Nav.Link>
               
           </Nav>
       </Navbar.Collapse>
