@@ -13,7 +13,7 @@ import Services from "../pages/Services.js";
 import Careers from "../pages/Careers";
 import Contact from "../pages/Contact";
 import styles from "../components/Navbar.module.css"
-
+import ScrollToTop from "./ScrollToTop";
 function NavBar() {
 
 // This function makes the navbar transition from transparent to black on scroll
@@ -32,6 +32,8 @@ function NavBar() {
         document.removeEventListener('scroll', handleScroll)
       }
     }, [])
+
+   
 
   return (
   
@@ -54,6 +56,7 @@ function NavBar() {
   </Navbar>
   
   <Routes>
+  <ScrollToTop />
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/services" element={<Services/>}/>
