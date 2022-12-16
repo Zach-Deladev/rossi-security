@@ -54,9 +54,9 @@ function NavBar() {
       </Navbar.Collapse>
 
   </Navbar>
-  
-  <Routes>
   <ScrollToTop />
+  <Routes>
+  
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/services" element={<Services/>}/>
