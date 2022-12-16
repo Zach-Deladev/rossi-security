@@ -38,6 +38,7 @@ function NavBar() {
   return (
   
   <HashRouter>
+    <ScrollToTop />
 <Navbar className={styles.navbg} collapseOnSelect expand="lg" fixed="top" variant="dark" style={{ transition: '1s ease',backgroundColor: navBackground ? 'black' : 'transparent'}}>
 
       <Navbar.Brand className={styles.brand} as={Link} to="/" ><img src={companyLogo} alt="Logo"></img></Navbar.Brand>
@@ -54,7 +55,7 @@ function NavBar() {
       </Navbar.Collapse>
 
   </Navbar>
-  <ScrollToTop />
+  
   <Routes>
   
         <Route path="/" element={<Home/>}/>
