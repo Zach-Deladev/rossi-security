@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 import React, { useState, useRef, useEffect} from 'react';
-import { HashRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import companyLogo from "../media/logo.png";
 
 
@@ -37,9 +37,9 @@ function NavBar() {
 
   return (
   
-  <HashRouter>
+  <BrowserRouter>
     <ScrollToTop />
-<Navbar className={styles.navbg} collapseOnSelect expand="lg" fixed="top" variant="dark" style={{ transition: '1s ease',backgroundColor: navBackground ? 'black' : 'transparent'}}>
+    <Navbar className={styles.navbg} collapseOnSelect expand="lg" fixed="top" variant="dark" style={{ transition: '1s ease',backgroundColor: navBackground ? 'black' : 'transparent'}}>
 
       <Navbar.Brand className={styles.brand} as={Link} to="/" ><img src={companyLogo} alt="Logo"></img></Navbar.Brand>
       <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
@@ -65,7 +65,7 @@ function NavBar() {
         <Route path="/contact" element={<Contact/>}/>
         
     </Routes>
-  </HashRouter>
+  </BrowserRouter>
   
   );
 }
