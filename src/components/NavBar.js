@@ -33,20 +33,23 @@ function NavBar() {
       }
     }, [])
 
+    const [expanded, setExpanded] = useState(false);
+
+
   return (
   
   <HashRouter>
-<Navbar className={styles.navbg} collapseOnSelect expand="lg" fixed="top" variant="dark" style={{ transition: '1s ease',backgroundColor: navBackground ? 'black' : 'transparent'}}>
+<Navbar expanded={expanded} className={styles.navbg} collapseOnSelect expand="lg" fixed="top" variant="dark" style={{ transition: '1s ease',backgroundColor: navBackground ? 'black' : 'transparent'}}>
 
       <Navbar.Brand className={styles.brand} as={Link} to="/" ><img src={companyLogo} alt="Logo"></img></Navbar.Brand>
-      <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
+      <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls='responsive-navbar-nav'/>
       <Navbar.Collapse className={styles.items} id='responsive-navbar-nav'>
          <Nav  className="justify-content-end" style={{ width: "100%" }} >
-              <Nav.Link className={styles.pagename} as={Link} to="/" href="#home">Home</Nav.Link>
-              <Nav.Link  className={styles.pagename}as={Link} to="/about" >About</Nav.Link>
-              <Nav.Link className={styles.pagename} as={Link} to="/services">Services</Nav.Link>
-              <Nav.Link className={styles.pagename} as={Link} to="/careers">Careers</Nav.Link>
-              <Nav.Link className={styles.pagename2} as={Link} to="/contact">Contact Us</Nav.Link>
+              <Nav.Link onClick={() => setExpanded(false)} className={styles.pagename} as={Link} to="/" href="#home">Home</Nav.Link>
+              <Nav.Link onClick={() => setExpanded(false)}  className={styles.pagename}as={Link} to="/about" >About</Nav.Link>
+              <Nav.Link onClick={() => setExpanded(false)} className={styles.pagename} as={Link} to="/services">Services</Nav.Link>
+              <Nav.Link onClick={() => setExpanded(false)} className={styles.pagename} as={Link} to="/careers">Careers</Nav.Link>
+              <Nav.Link onClick={() => setExpanded(false)} className={styles.pagename2} as={Link} to="/contact">Contact Us</Nav.Link>
               
           </Nav>
       </Navbar.Collapse>
