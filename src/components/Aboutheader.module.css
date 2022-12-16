@@ -16,7 +16,7 @@
 }
 
 .lgdiv {
-  padding-left: 100px;
+  padding-left: 50px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -28,7 +28,7 @@ span {
 }
 
 .bg h3 {
-padding-left: 220px;
+padding-left: 270px;
   color: white;
 }
 
