@@ -61,10 +61,12 @@ ul {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 999px) {
     .griditems img {
         height: 400px;
         width: 337px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
     .griditems h4 {
         font-size: 1.6rem;
@@ -72,21 +74,14 @@ ul {
     margin-left: 0;
     }
     .cont h1 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
-}
-@media (max-width: 1000px)
-{
-.griditems {
-    display: block;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 20px;
-    width: 100%;
-}
 
-.cont h1 {
-    font-size: 2rem;
-}
-
+    .griditems {
+        display: block;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
 }
