@@ -1,0 +1,36 @@
+.bg {
+   background-image: url("../media/carbg.jpg");
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+   justify-content: center;
+   text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  
+   
+}
+
+.bg h1 {
+  color: white;
+  text-align: center;
+  position: absolute;
+  margin:0 auto;
+  right:0;
+  left:0;
+  top: 25%;
+ 
+}
+
+@media (max-width: 400px)
+{
+  .bg h1 {
+    font-size: 1.4rem;
+    top: 20%;
+  }
+
+}

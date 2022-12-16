@@ -1,0 +1,56 @@
+.navbg {
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.items {
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.pagename {
+    border: 0px #9e0000  solid;
+}
+
+.pagename:hover {
+   color: white;
+    border-bottom: 2px solid #9e0000;
+    margin: auto 5px;
+    padding: 2px;
+}
+
+.pagename2 {
+    color: white;
+    background-color: #d2000000;
+   border: #9e0000 solid 2px;
+    border-radius: 5%;
+    margin: auto 5px;
+    font-weight: bold;
+    padding: 1px 3px 3px 3px;
+}
+
+.pagename2:hover {
+    color: white;
+    background-color: #b90000;
+    font-weight: bolder;
+}
+
+.brand img {
+    height: 35px;
+    width: auto;
+    margin-left: 25px;
+}
+
+
+.dropdown {
+    border: 0px #9e0000  solid;
+    color: white;
+    background-color: black;
+}
+
+@media (max-width:600px){
+    .brand img{
+        height: 25px;
+        width: auto;
+    }
+}

@@ -1,0 +1,171 @@
+.footer {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: fit-content;
+}
+
+.bg {
+    width: 100vw;
+    height: fit-content;
+    background-image: url(../media/footerbg.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    
+}
+
+
+
+
+
+/* Contact form */
+
+.contactform {
+    width: 400px;
+  
+    padding: 20px;
+   text-align: left;
+   margin: 20px auto auto auto 
+
+}
+
+#fullname {
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 200px;
+}
+
+#emailaddress {
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 400px;
+}
+
+#query {
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    color: white; 
+    width: 400px;
+}
+
+.contactbtn{
+    border: 3px solid #9e0000;
+    border-radius: 0;
+    color: white;
+    padding: 1px 16px;
+    background-color: black;
+}
+
+.btn {
+     text-align: left;
+     padding: 0 !important;
+     margin-top: 5px;
+}
+
+.contacttitle {
+    padding-bottom: 15px;
+}
+
+
+.contacttitle h3 {
+    color: white;
+}
+.contacttitle h4 {
+    color: #9e0000;
+}
+
+@media (max-width: 600px) {
+   
+    .footer {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .contactform {
+        text-align: center;
+        width: 300px;
+    }
+  
+    
+    #fullname {
+width: 150px;
+    }
+
+    #emailaddress {
+width: 260px;
+    }
+
+    #query {
+width: 260px;
+    }
+
+    .footertext h4 {
+        font-size: 1rem;
+    }
+
+    .footertext p {
+        font-size: .8rem;
+    }
+
+}
+@media (max-width: 1000px) {
+   
+    #fullname {
+        width: 150px;
+            }
+        
+            #emailaddress {
+        width: 260px;
+            }
+        
+            #query {
+        width: 260px;
+            }
+
+            .footer {
+                grid-template-columns: 1fr;
+                height: fit-content;
+            }
+
+            .contactform {
+                text-align: center;
+            }
+
+}
+/* Contact details */
+
+.footertext{
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footertext h4 {
+    color: #9e0000;
+}
+
+p {
+    color: white;
+}
+
+.text {
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+    color: #9e0000;
+}

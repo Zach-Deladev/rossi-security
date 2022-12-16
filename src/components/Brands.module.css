@@ -1,0 +1,249 @@
+.brandcont 
+{
+ width: 100vw;
+ height: fit-content;
+ padding-top: 20px;
+ padding-bottom: 30px;
+ text-align: center;
+
+}
+
+
+.brandcont h2 {
+    padding: 5px;
+}
+
+.cont {
+    background-color: #F3F1F1;
+    width: 80vw;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+
+  .hidden {
+    display: none;
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+    display: inline-block;
+    margin: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+
+
+
+ #griditm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#griditm:hover {
+    transform: scale(1.1);
+}
+  
+.gucci {
+
+height: 200px;
+width: 200px;
+background-color: bisque;
+display: inline-block;
+margin: 15px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.gucci img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gucci:hover {
+    transform: scale(1.1);
+}
+
+.fendi {
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+    display: inline-block;
+    margin: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .fendi img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .fendi:hover {
+        transform: scale(1.1);
+    }
+
+
+.amq {
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+    display: inline-block;
+    margin: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .amq img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .amq:hover {
+        transform: scale(1.1);
+    }
+
+.zegna {
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+    display: inline-block;
+    margin: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .zegna img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .zegna:hover {
+        transform: scale(1.1);
+    }
+
+.givenchy {
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+    display: inline-block;
+    margin: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .givenchy img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .givenchy:hover {
+        transform: scale(1.1);
+    }
+    .portbutton {
+        border: none;
+        font-weight: 500;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .portbutton:hover {
+        background-color: black;
+        color: white;
+    }
+
+  
+ 
+    @media (max-width: 925px) {
+        .amq {
+            height: 100px;
+            width: 100px;
+        }
+        .gucci {
+            height: 100px;
+            width: 100px;
+        }
+    
+        .fendi {
+            height: 100px;
+            width: 100px;
+        }
+        .hidden {
+            height: 100px;
+            width: 100px;
+        }
+        .zegna {
+            height: 100px;
+            width: 100px;
+        }
+        .givenchy {
+            display: none;
+         }
+      }
+    
+      @media (min-width: 926px) {
+      
+        .zegna {
+            height: 150px;
+            width: 150px;
+        }
+        
+      .amq {
+        height: 150px;
+        width: 150px;
+    }
+    .gucci {
+        height: 150px;
+        width: 150px;
+    }
+
+    .fendi {
+        height: 150px;
+        width: 150px;
+    }
+    .hidden {
+        height: 150px;
+        width: 150px;
+    }
+
+    .givenchy {
+        height: 150px;
+        width: 150px;
+    }
+      }
+
+  
+    
+      @media (min-width: 1460px) {
+    
+     .zegna {
+        height: 200px;
+        width: 200px;
+    }
+    
+  .amq {
+    height: 200px;
+    width: 200px;
+}
+.gucci {
+    height: 200px;
+    width: 200px;
+}
+
+.fendi {
+    height: 200px;
+    width: 200px;
+}
+.hidden {
+    height: 200px;
+    width: 200px;
+}
+.givenchy {
+    height: 200px;
+    width: 200px;
+}
+  }
+   
+      
+    

@@ -1,0 +1,101 @@
+.bg {
+    width: 100vw;
+    height: min-content;
+    background-image: url(../media/careersstats-bg.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 80px;
+   
+}
+
+
+.bg h1 {
+ 
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    margin: auto;
+    
+}
+
+.bg p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    color: black;
+    width: 42vw;
+    text-align: left;
+    margin: auto;
+    line-height: 2;
+    width: max-content;
+}
+
+.why {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 150px;
+}
+
+@media (max-width: 1140px) {
+    .bg h1 {
+        font-size: 2.5rem;
+    }
+
+    .bg p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .bg h1 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .bg h1 {
+ 
+        text-align: center;
+        font-size: 2rem;
+    }
+    .why {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    
+    .bg p {
+        padding-top: 30px;
+        font-size: 1.4rem;
+       
+        width: 42vw;
+        text-align: center;
+        margin: auto;
+        line-height: 2;
+    }
+
+  }
+
+  @media (max-width: 700px) {
+    .bg h1 {
+ 
+  
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .bg p {
+        padding-top: 30px;
+        font-size: 1.2rem;
+   
+        width: 60vw;
+        text-align: center;
+        margin: auto;
+        line-height: 2;
+    }
+
+  }

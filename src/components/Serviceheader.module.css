@@ -1,0 +1,98 @@
+.bg {
+  width: 100%;
+  height: 60vh;
+  background-image: url(../media/carbg.jpg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  display: flex;
+  justify-content:center;
+  position: relative;
+  
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+  
+}
+
+.lgdiv {
+padding-left: 100px;
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+}
+
+span {
+color: red;
+}
+
+.bg h3 {
+padding-left: 320px;
+color: white;
+}
+
+
+.bg h1{
+  font-size: 2.6rem;
+
+  color: white;
+  padding: 0;
+  font-weight: 400;
+
+}
+
+
+
+/* Media quesries */
+
+/* Mobile view */
+@media (max-width: 999px) {
+
+  .bg h1 {
+    font-size: 2.6rem;
+    text-align: center;
+    padding-left: 0;
+  }
+  .lgdiv {
+    padding-left: 0;
+    width: 100%;
+    margin-left: 0;
+    grid-template-columns: 1fr;
+  }
+
+ .bg h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0;
+  }
+  
+
+ 
+
+  
+}
+
+/* Tablet view */
+
+
+@media (min-width: 999px) {
+   .bg h1 {
+    font-size: 2.8rem;
+    text-align: left;
+  }
+  .bg h3 {
+    font-size: 1.6rem;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+}
+
+/* Desktop */
+@media (min-width: 1350px) {
+   .bg h1 {
+    font-size: 2.6rem;
+   
+  }
+
+}
